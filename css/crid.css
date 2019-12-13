@@ -1,0 +1,212 @@
+/* Import */
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+/* Import - End */
+
+/* reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+p, a {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* conteiner */
+.container  {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+}
+    @media (min-width: 1140px) {
+        .container {
+            max-width: 1140px;
+            padding: 0;
+        }
+    }
+
+
+/* linha */
+.row {
+    margin-left: -5px;
+    margin-right: -5px;
+}
+    .row:before,
+    .row:after {
+        content: "";
+        display: table;
+    }
+    .row:after {
+        clear: both;
+    }
+
+
+/* colunas */
+.col {
+    display: inline-block;
+    vertical-align: top;
+    min-height: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+    margin-right: -4px;
+    *zoom: 1;
+    *display: inline;
+}
+/* Duas colunas */
+
+    @media (min-width: 728px){
+        .col-2 {
+            width: 50%;
+        }
+    }
+
+/* Tres colunas */
+
+    @media (min-width: 728px){
+        .col-3{
+            width: 33.3333%;
+        }
+    }
+
+
+    /* estilo */
+
+    .headerContato {
+        height: 50px;
+        background-color: rgb(142, 143, 143);
+    }
+    
+    .headerLogo img {
+        padding: 20px 0;        
+    }
+
+    .navmenu {
+        background-color: #4a96d6;
+        height: 60px;
+    }
+
+    .navmenu ul li{
+        display: inline-block;
+        margin-right: 30px;
+        margin-top: 20px;
+        
+    }
+
+    .navmenu ul li a{
+        text-transform: uppercase;
+        color: white;
+        text-decoration: none;
+    }
+    
+    .navmenu ul li a:hover{
+        color: blueviolet;
+    }
+
+    .bgImagens {
+        height: 500px;
+        width: 100%;
+        background-image: url(../img/bgimage.jpg);
+    }
+
+    .title {
+        color: #132d50;
+        font-family: 'Archivo Black', sans-serif;
+        font-size: 30px;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .servicosTitle {
+        margin-top: 100px;
+        margin-bottom: 75px;
+    }
+    
+    .servicosImg {
+        margin-bottom: 80px;
+        background-color: #caced2;
+    
+/*         -webkit-box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.55);
+        -moz-box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.55);
+        box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.55); */
+    }
+
+    .servicosImg img {
+        width: 100%;
+    }
+    
+    .infoServicos h3{
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+        margin: 25px 0;
+        padding: 0 15px 0;
+    }
+    
+    .infoServicos p{
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 0 15px 30px 15px;
+    }
+
+    .clientesTitle {
+        margin-top: 100px;
+        margin-bottom: 75px;
+    }
+
+    .clientes {
+        background-color: #caced2;
+        padding-bottom: 100px;
+
+    }
+
+    .clientes .teste {
+        height: 140px;
+        background-color: white;
+        margin-bottom: 20px;
+    }
+
+    .footer {
+        background-color: #132d50;
+        padding: 70px;
+    }
+    
+    .footer img {
+        padding-bottom: 20px;
+    }
+    
+    .footerInfo {
+        color: #9c9c9c;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        line-height: 30px;
+        padding: 30px 0;
+    }
+
+    .copy {
+        display: flex;
+        align-items: center;
+        background-color: #0a182b;
+        padding: 20px;
+        height: 150px;
+    }
+    .copyInfo {
+        text-align: center;
+        color: white;
+    }
+    
+    .copyInfo p {
+        font-size: 15px;
+    }
+    
+    .copyInfo a {
+        color: #4a96d6;
+    }
