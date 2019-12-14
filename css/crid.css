@@ -22,7 +22,7 @@ p, a {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding: 0 20px;
+    padding: 0 10px;
 }
     @media (min-width: 1140px) {
         .container {
@@ -176,7 +176,7 @@ p, a {
 
     .footer {
         background-color: #132d50;
-        padding: 70px;
+        padding: 70px 5px;
     }
     
     .footer img {
