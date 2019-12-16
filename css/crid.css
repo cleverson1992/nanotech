@@ -52,8 +52,8 @@ p, a {
     display: inline-block;
     vertical-align: top;
     min-height: 1px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
     width: 100%;
     margin-right: -4px;
     *zoom: 1;
@@ -91,12 +91,16 @@ p, a {
         background-color: #4a96d6;
         height: 60px;
     }
+        @media (max-width: 340px){
+            .navmenu {
+                height: 90px;
+            }
+        }
 
     .navmenu ul li{
         display: inline-block;
         margin-right: 30px;
         margin-top: 20px;
-        
     }
 
     .navmenu ul li a{
@@ -176,7 +180,7 @@ p, a {
 
     .footer {
         background-color: #132d50;
-        padding: 70px 5px;
+        padding: 70px 10px;
     }
     
     .footer img {
@@ -209,4 +213,24 @@ p, a {
     
     .copyInfo a {
         color: #4a96d6;
+    }
+
+    /* Responsivo */
+
+    @media (max-width: 728px) {
+        .headerLogo {
+            text-align: center;
+        }
+
+        .navmenu ul {
+            text-align: center;
+        }
+
+        .navmenu ul li{
+            margin-right: 22px;
+        }
+
+        .navmenu ul li:last-child {
+            margin-right: 0px;
+        }
     }
