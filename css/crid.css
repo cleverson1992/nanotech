@@ -61,15 +61,17 @@ p, a {
 }
 /* Duas colunas */
 
-    @media (min-width: 728px){
+    @media (min-width: 700px){
         .col-2 {
             width: 50%;
+            padding-left: 10px;
+            padding-right: 10px;
         }
     }
 
 /* Tres colunas */
 
-    @media (min-width: 728px){
+    @media (min-width: 920px){
         .col-3{
             width: 33.3333%;
         }
@@ -81,6 +83,7 @@ p, a {
     .headerContato {
         height: 50px;
         background-color: rgb(142, 143, 143);
+        display: none;
     }
     
     .headerLogo img {
@@ -91,7 +94,7 @@ p, a {
         background-color: #4a96d6;
         height: 60px;
     }
-        @media (max-width: 340px){
+        @media (max-width: 360px){
             .navmenu {
                 height: 90px;
             }
@@ -169,7 +172,6 @@ p, a {
     .clientes {
         background-color: #caced2;
         padding-bottom: 100px;
-
     }
 
     .clientes .teste {
@@ -217,7 +219,7 @@ p, a {
 
     /* Responsivo */
 
-    @media (max-width: 728px) {
+    @media (max-width: 700px) {
         .headerLogo {
             text-align: center;
         }
@@ -232,5 +234,13 @@ p, a {
 
         .navmenu ul li:last-child {
             margin-right: 0px;
+        }
+        
+        .bgImagens {
+            height: 300px;
+        }
+
+        .footer {
+            text-align: center;
         }
     }
