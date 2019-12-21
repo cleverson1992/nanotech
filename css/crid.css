@@ -61,11 +61,10 @@ p, a {
 }
 /* Duas colunas */
 
-    @media (min-width: 700px){
+    @media (min-width: 500px){
         .col-2 {
             width: 50%;
-            padding-left: 10px;
-            padding-right: 10px;
+
         }
     }
 
@@ -118,6 +117,7 @@ p, a {
     
     .navmenu ul li a:hover{
         color: #D4635F;
+        transition: 0.6s;
     }
 
     .bgImagens {
