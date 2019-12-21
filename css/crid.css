@@ -52,8 +52,8 @@ p, a {
     display: inline-block;
     vertical-align: top;
     min-height: 1px;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
     width: 100%;
     margin-right: -4px;
     *zoom: 1;
@@ -99,6 +99,10 @@ p, a {
                 height: 90px;
             }
         }
+    
+    .navmenu ul {
+        text-align: right;
+    }
 
     .navmenu ul li{
         display: inline-block;
@@ -113,12 +117,12 @@ p, a {
     }
     
     .navmenu ul li a:hover{
-        color: blueviolet;
+        color: #D4635F;
     }
 
     .bgImagens {
-        height: 500px;
         width: 100%;
+        height: 500px;
         background-image: url(../img/bgimage.jpg);
     }
 
@@ -217,6 +221,31 @@ p, a {
         color: #4a96d6;
     }
 
+    #top {
+        background: #384957;
+        width: 60px;
+        height: 60px;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        border-radius: 20%;
+
+        -webkit-box-shadow: 6px 6px 5px -4px rgba(0,0,0,0.65);
+        -moz-box-shadow: 6px 6px 5px -4px rgba(0,0,0,0.65);
+        box-shadow: 6px 6px 5px -4px rgba(0,0,0,0.65);
+    }
+
+    #top svg {
+        width: 60px;
+        height: 60px;
+        fill: #fff;
+    }
+
+    #top svg:hover {
+        transition: .3s;
+        fill: #D4635F;
+    }
+    
     /* Responsivo */
 
     @media (max-width: 700px) {
