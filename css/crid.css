@@ -17,6 +17,10 @@ p, a {
     font-family: 'Roboto', sans-serif;
 }
 
+img {
+  display: block;
+}
+
 /* conteiner */
 .container  {
     width: 100%;
@@ -93,7 +97,7 @@ p, a {
         background-color: #4a96d6;
         height: 60px;
     }
-        @media (max-width: 360px){
+        @media (max-width: 370px){
             .navmenu {
                 height: 90px;
             }
@@ -133,6 +137,15 @@ p, a {
         font-weight: bold;
         text-transform: uppercase;
         text-align: center;
+    }
+
+    .title::after{
+        content: '';
+        display: block;
+        width: 140px;
+        height: 5px;
+        margin: 10px auto;
+        background: currentColor;
     }
 
     .servicosTitle {
@@ -245,12 +258,18 @@ p, a {
         transition: .3s;
         fill: #D4635F;
     }
+
+    .imgClass:hover {
+        border: 5px solid #D4635F;
+        transition: 0.5s;
+    }
     
     /* Responsivo */
 
     @media (max-width: 700px) {
-        .headerLogo {
-            text-align: center;
+        .headerLogo img {
+            margin: 5px auto;
+            max-width: 200px;
         }
 
         .navmenu ul {
@@ -271,5 +290,9 @@ p, a {
 
         .footer {
             text-align: center;
+        }
+
+        .footer img {
+            margin: 0 auto;
         }
     }
