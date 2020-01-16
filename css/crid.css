@@ -281,6 +281,9 @@ img {
         transition: .5s;
         position: relative;
     }
+    .servicosImg:hover{
+        background-color: #132d50;
+    }
     
     .servicosImg::before {
         content: '';
@@ -312,7 +315,7 @@ img {
 
     .servicosImg .infoServicos {
         padding: 20px 0;
-      /*   position: relative; */
+        position: relative;
     }
     
     .infoServicos h3{
@@ -327,7 +330,7 @@ img {
 
     .infoServicos h3::after {
         position: absolute;
-        top: 80%;
+        top: 50%;
         left: 47%;
         content: '';
         border: 18px solid transparent;
