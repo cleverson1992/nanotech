@@ -122,7 +122,7 @@ img {
     .headerContato .box .btn a:hover {
         color: #fff;
         background-color: #59bea5;
-        transform: scale(1.1);
+        transform: scale(1.07);
     }
 
     .headerContato .box .btnEmail a {
@@ -144,7 +144,7 @@ img {
     .navmenu {
         position: relative;
         background-color: #132d50;
-        height: 60px;
+        height: 55px;
         display: flex;
         align-items: center;
         z-index: 999;
@@ -198,7 +198,7 @@ img {
     }
 
     .navmenu ul li a:hover {
-        transform: scale(1.3);
+        transform: scale(1.2);
     }
 
     .navmenu ul li a::before {
@@ -232,16 +232,16 @@ img {
         background: black;
     }
 
-    .introducao > div{
+    .introducao  div{
         display: flex;
         align-items: center;
         justify-content: center;
     }
 
     .introducao img {
-      display: block;
-      margin: 0 auto;
-      max-width: 100%;
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
     }
 
     .introducao h2 {
@@ -254,14 +254,14 @@ img {
       text-transform: uppercase;
       text-align: center;
       color: white;
-      text-shadow: 2px 2px 7px rgba(0,0,0,.6);
+      text-shadow: 2px 2px 3px rgba(0,0,0,.7);
     }
 
 /* Slide confguration */
     .slide {
       position: relative;
       overflow: hidden;
-      height: 400px;
+      height: 450px;
     }
 
     .slide > * {
@@ -311,11 +311,11 @@ img {
     }
 
     [data-button] > span:hover {
-      background-color: lightslategrey;
+      background-color: #ddd;
     }
 
     [data-button] > span.active {
-      background-color: lightgrey;
+      background-color:  #FF5852;
     }
 
 
@@ -511,29 +511,33 @@ img {
     }
     /* Botão de voltar ao topo */
         #top {
-            background: #384957;
-            width: 50px;
-            height: 50px;
+            display: block;
             position: fixed;
             bottom: 20px;
             right: 20px;
+            width: 50px;
+            height: 50px;
             border-radius: 10%;
+            background: rgba(0, 0, 0, 0.7);
 
             box-shadow: 0px 4px 2px -2px rgba(0,0,0,.3),
                         0px 8px 2px -4px rgba(0,0,0,.2),
                         0px 12px 2px -6px rgba(0,0,0,.1);
         }
 
-        #top svg {
-            width: 50px;
-            height: 50px;
-            fill: #fff;
+        #top a .fa{
+            position: absolute;
+            top: 44%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 2.3em;
+            color: #fff;
             transition: .5s;
         }
 
-        #top svg:hover {
-            transform: scale(1.2);
-            fill: #4a96d6;
+        #top a .fa:hover {
+            transform: translate(-50%, -50%);
+            color: #FF5852;
     }
     /* Botão de voltar ao topo */
 
@@ -544,6 +548,12 @@ img {
           display: none;
         }
 
+        .headerLogo {
+            margin-top: 60px;
+            justify-content: center;
+            padding: 15px 0;
+        }
+
         .navmenu {
           position: fixed;
           top: 0;
@@ -551,10 +561,12 @@ img {
           width: 100%;
         }
 
-        .headerLogo {
-          margin-top: 60px;
-          justify-content: center;
-          padding: 15px 0;
+        .introducao img {
+            max-width: 130%;
+        }
+
+        .slide {
+        max-height: 270px;
         }
     }
 
@@ -593,13 +605,14 @@ img {
 
         .navmenu ul {
             position: absolute;
-            top: 60px;  left: 0;
+            top: 55px;  left: 0;
             text-align: center;
             background-color: #132d50;
             height: 100vh;
             width: 100%;
             transform: translateX(-100%);
             transition: all .3s;
+            border-top: solid 3\px #FF5852; 
         }
 
         .navmenu ul.active {
@@ -615,20 +628,37 @@ img {
             font-size: 20px;
         }
 
+        .navmenu ul li a:hover {
+            transform: scale(1);
+        }
+    
+        .navmenu ul li a::before {
+            content: '';
+            position: absolute;
+            top: 0;  left: 10%;
+            width: 80%;
+            height: 100%;
+            background: #4a96d6;
+            transform-origin: right;
+            transform: scaleX(0);
+            transition: transform 0.5s ;
+            z-index: -1;
+        }
+
         .title{
             font-size: 25px;
         }
 
         .introducao h2 {
-          font-size: 2.3em;
+          font-size: 2.2em;
         }
 
         .introducao img {
-          max-width: 170%;
+          max-width: 200%;
         }
 
         .slide {
-          max-height: 250px;
+          max-height: 230px;
         }
 
         .footer {
