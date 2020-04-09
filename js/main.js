@@ -55,8 +55,6 @@ $(window).ready(function(){
 
   });
 
-
-
 //Slider function
   $('[data-slide] > :first').addClass('active');
   verifyActive();
@@ -108,18 +106,14 @@ $(window).ready(function(){
 
 
 
-//Mobile Menu
-$('.btn-mobile').click(function(){
-  $(this).toggleClass('active');
-  $('.list-menu').toggleClass('active');
+  //Mobile Menu
+  $('.btn-mobile').click(function(){
+    $(this).toggleClass('active');
+    $('.list-menu').toggleClass('active');
 
-  $('.navmenu a[href^="#"]').click(function(){
-    $('.btn-mobile').click();
+    $('.navmenu a[href^="#"]').click(function(){
+      $('.btn-mobile').click();
+    });
   });
-});
-
-
-
-
 
 });
