@@ -1,6 +1,6 @@
 <div align="center">
   <p align="center">
-    <img src="img/logo-Readme.png" ></img>
+    <img src="img/Logo-Readme.png" ></img>
   </p>
   <h1>Projeto Nanotech Informática</h1>
   <p>
